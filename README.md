@@ -53,3 +53,7 @@ Create a .env file in the root directory and add your env variables.
 The email service feature can be tested via:
 
 https://temp-mail.org
+
+The steps to test the email notification is listed in the frontend repo:
+
+https://github.com/Srisabarikkumar/Job-Portal-frontend
