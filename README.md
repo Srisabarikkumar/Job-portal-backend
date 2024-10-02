@@ -26,26 +26,26 @@ This project has four entities, through which the controllers, models and routes
 1. Clone the repo:
 
 ```bash
-   git clone repo
+ git clone repo
 ```
 2. Install node modules:
 
 ```bash
-   npm i
+ npm install
 ```
 3. Set up Environment Variables:
 
 Create a .env file in the root directory and add your env variables.
 
 ```bash
-   PORT=3000
-   DB=your_mongoDB_connection_string
+ PORT=3000
+ DB=your_mongoDB_connection_string
 ```
 
 4. Start the development server:
 
 ```bash
-   nodemon index.js
+ nodemon index.js
 ```
 
 # Nodemailer setup
