@@ -1,4 +1,4 @@
-# Job Portal App Backend repo
+# Job Portal App Backend
 
 This repository walks you through the Job Portal API project setup.
 
