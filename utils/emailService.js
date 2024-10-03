@@ -17,7 +17,7 @@ export const registerNotification = (fullname, email) => {
     theme: "default",
     product: {
       name: "Job Portal",
-      link: "http://localhost:5173",
+      link: "https://job-portalapp-mern.netlify.app",
     },
   });
 
@@ -31,7 +31,7 @@ export const registerNotification = (fullname, email) => {
         button: {
           color: "#22BC66",
           text: "Login",
-          link: "http://localhost:5173/login",
+          link: "https://job-portalapp-mern.netlify.app/login",
         },
       },
       outro:
@@ -67,7 +67,7 @@ export const registerAdminNotification = (fullname, email) => {
     theme: "default",
     product: {
       name: "Job Portal",
-      link: "http://localhost:5173",
+      link: "https://job-portalapp-mern.netlify.app",
     },
   });
 
@@ -82,7 +82,7 @@ export const registerAdminNotification = (fullname, email) => {
         button: {
           color: "#22BC66",
           text: "Login",
-          link: "http://localhost:5173/login",
+          link: "https://job-portalapp-mern.netlify.app/login",
         },
       },
       outro:
@@ -118,7 +118,7 @@ export const jobApplyNotification = (fullname, email, jobTitle) => {
     theme: "default",
     product: {
       name: "Job Portal",
-      link: "http://localhost:5173",
+      link: "https://job-portalapp-mern.netlify.app",
     },
   });
 
@@ -132,7 +132,7 @@ export const jobApplyNotification = (fullname, email, jobTitle) => {
         button: {
           color: "#22BC66",
           text: "Application status",
-          link: "http://localhost:5173/login",
+          link: "https://job-portalapp-mern.netlify.app/login",
         },
       },
       outro:
@@ -168,7 +168,7 @@ export const newJobNotification = (jobTitle, candidateEmails) => {
     theme: "default",
     product: {
       name: "Job Portal",
-      link: "http://localhost:5173/login",
+      link: "https://job-portalapp-mern.netlify.app",
     },
   });
 
@@ -183,7 +183,7 @@ export const newJobNotification = (jobTitle, candidateEmails) => {
         button: {
           color: "#22BC11",
           text: "View job",
-          link: "http://localhost:5173/login",
+          link: "https://job-portalapp-mern.netlify.app/login",
         },
       },
       outro:
