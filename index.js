@@ -10,13 +10,6 @@ import applicationRoute from "./routes/application.route.js";
 
 dotenv.config({});
 
-connectDB();
-
-import { User } from "./models/user.model.js";
-import { Job } from "./models/job.model.js";
-import { Company } from "./models/company.model.js";
-import { Application } from "./models/application.model.js";
-
 const app = express();
 
 // middleware
@@ -31,16 +24,16 @@ const allowedOrigins = [
 ];
 
 app.use(
-  cors({
+    cors({
     origin: (origin, callback) => {
       if (allowedOrigins.includes(origin) || !origin) {
         callback(null, true);
-      } else {
+    } else {
         callback(new Error("Not allowed by CORS"));
-      }
-    },
-    credentials: true,
-  })
+    }
+},
+credentials: true,
+})
 );
 
 const PORT = process.env.PORT || 3000;
@@ -52,5 +45,6 @@ app.use("/api/v1/job", jobRoute);
 app.use("/api/v1/application", applicationRoute);
 
 app.listen(PORT, () => {
+  connectDB();
   console.log(`Server running at port ${PORT}`);
 });
