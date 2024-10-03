@@ -12,6 +12,11 @@ dotenv.config({});
 
 connectDB();
 
+import { User } from "./models/user.model.js";
+import { Job } from "./models/job.model.js";
+import { Company } from "./models/company.model.js";
+import { Application } from "./models/application.model.js";
+
 const app = express();
 
 // middleware
