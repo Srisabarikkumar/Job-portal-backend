@@ -45,7 +45,7 @@ Create a .env file in the root directory and add your env variables.
 4. Start the development server:
 
 ```bash
- nodemon index.js
+ node index.js
 ```
 
 # Nodemailer setup
