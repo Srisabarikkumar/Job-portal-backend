@@ -3,7 +3,10 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { getDataUri } from "../utils/datauri.js";
 import cloudinary from "../utils/cloudinary.js";
-import { registerAdminNotification, registerNotification } from "../utils/emailService.js";
+import {
+  registerAdminNotification,
+  registerNotification,
+} from "../utils/emailService.js";
 
 export const register = async (req, res) => {
   try {
@@ -34,9 +37,9 @@ export const register = async (req, res) => {
       phoneNumber,
       password: hashedPassword,
       role,
-      profile:{
-          profilePhoto:cloudResponse.secure_url,
-      }
+      profile: {
+        profilePhoto: cloudResponse.secure_url,
+      },
     });
 
     // Logic for sending a mail to the user on successful registeration
@@ -99,7 +102,7 @@ export const login = async (req, res) => {
       email: user.email,
       phoneNumber: user.phoneNumber,
       role: user.role,
-      profile: user.profile
+      profile: user.profile,
     };
 
     return res
@@ -121,7 +124,8 @@ export const login = async (req, res) => {
 };
 export const logout = async (req, res) => {
   try {
-    return res.status(200).cookie("token", "", { maxAge: 0 }).json({
+    await res.clearCookie("token");
+    return res.status(200).json({
       message: "Logged out successfully.",
       success: true,
     });
